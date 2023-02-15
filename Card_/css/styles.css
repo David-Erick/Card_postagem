@@ -1,0 +1,81 @@
+*{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card{
+    background-color: rgb(240, 251, 255);
+    box-shadow: 0 2px 23px #5a707b;
+    padding: 2vh;
+    border-radius: 20px;
+    animation: float 3s ease-in-out infinite;
+    width: 500px;
+
+ 
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px)
+    }
+}
+
+.image{
+    background: url("http://conteudo.imguol.com.br/c/parceiros/69/2020/08/21/thiago-silva-quer-ficar-no-psg-1598036462790_v2_615x300.png") center/cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*Estilizando os textos*/
+
+.title{
+    font-size: 1.7rem;
+    color: #2b2d50;
+    padding-top: 2vh;
+    text-align: center;
+}
+
+.top-text{
+    color: #828fa1;
+    padding-top: 0.5vh;
+    text-align: center;
+}
+
+.bottom-text{
+    color: #445b73;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+    text-align: center;
+}
+
+.actions{
+    background: none;
+    border: none;
+    color: #828fa1;
+    cursor: pointer;
+}
+
+.actions:hover{
+    color: #2b2d50;
+}
